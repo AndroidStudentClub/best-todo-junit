@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_background"
-    tools:context=".FirstFragment">
+    tools:context=".TasksListFragment">
 
     <include
         android:id="@+id/empty_placeholder"
@@ -15,6 +15,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/tasks"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
